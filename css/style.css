@@ -5,11 +5,22 @@ body {
   letter-spacing: 0.5px;
 }
 
+*:focus {
+  outline: 2px dotted #ff7500;
+  outline-offset: 3px;
+}
+
+/* Site-header */
+
 .site-header {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 5px solid #ff7500;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
 }
 
 .logo-link {
@@ -29,9 +40,12 @@ body {
   align-items: center;
 }
 
+/* Site-nav */
+
 .sitenav-list {
   list-style: none;
   display: flex;
+  padding: 0;
 }
 
 .sitenav-link {
@@ -53,6 +67,8 @@ body {
   opacity: 0.6;
 }
 
+/* Main-link */
+
 .main-link {
   font-size: 13px;
   line-height: 15px;
@@ -60,6 +76,10 @@ body {
   background-color: #ff7500;
   text-decoration: none;
   transition: opacity 0.4s ease;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 12px 24px;
 }
 
 .main-link:hover {
@@ -70,12 +90,16 @@ body {
   opacity: 0.6;
 }
 
+/* Hero */
+
 .hero {
   background-color: #252420;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .hero-content {
@@ -86,6 +110,7 @@ body {
   width: 80px;
   height: 3px;
   background-color: #ff7500;
+  border: 0;
 }
 
 .hero-heading {
@@ -97,6 +122,14 @@ body {
 .hero-img {
   width: 510px;
   height: 510px;
+  border-radius: 8px;
+}
+
+/* Features */
+
+.features{
+  padding-top: 210px;
+  padding-bottom: 210px;
 }
 
 .features-heading {
@@ -110,12 +143,17 @@ body {
 .features-list {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 
 .feature-icon-wrapper {
   width: 100px;
   height: 100px;
   background-color: rgba(255, 117, 0, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .feature-title {
@@ -135,12 +173,15 @@ body {
   list-style: none;
 }
 
+/* Promo */
+
 .promo {
   background-color: #252420;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 12px;
 }
 
 .promo-content {
@@ -161,10 +202,15 @@ body {
   width: 440px;
   height: 440px;
   object-fit: cover;
+  border-radius: 12px;
 }
+
+/* Site-footer */
 
 .site-footer {
   background-color: #f8f8f8;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .site-footer-top {
@@ -175,14 +221,16 @@ body {
 
 .site-footer ul {
   list-style: none;
+  padding: 0;
 }
 
 .site-footer-socials {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
-.site-footer-socials a{
+.site-footer-socials a {
   color: #252420;
 }
 
@@ -197,6 +245,7 @@ body {
 .site-footer-devider {
   background: rgba(37, 36, 32, 0.5);
   height: 2px;
+  border: 0;
 }
 
 .site-footer-bottom {
