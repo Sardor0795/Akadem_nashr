@@ -1,3 +1,9 @@
+:root {
+  --accent-color: #ff7500;
+  --main-font: "Roboto", "Arial", sans-serif;
+  --main-condenced-font: "Roboto Condensed";
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,12 +13,12 @@ body {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: var(--main-font);
   letter-spacing: 0.5px;
 }
 
 *:focus {
-  outline: 2px dotted #ff7500;
+  outline: 2px dotted var(--accent-color);
   outline-offset: 3px;
 }
 
@@ -29,7 +35,7 @@ body {
 
 .site-header {
   background-color: #fff;
-  border-top: 5px solid #ff7500;
+  border-top: 5px solid var(--accent-color);
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -91,7 +97,7 @@ body {
 }
 
 .sitenav-link:hover {
-  color: #ff7500;
+  color: var(--accent-color);
 }
 
 .sitenav-link:active {
@@ -104,7 +110,7 @@ body {
   font-size: 13px;
   line-height: 15px;
   color: #fff;
-  background-color: #ff7500;
+  background-color: var(--accent-color);
   text-decoration: none;
   transition: opacity 0.4s ease;
   display: inline-block;
@@ -143,7 +149,7 @@ body {
 .orange-line {
   width: 80px;
   height: 3px;
-  background-color: #ff7500;
+  background-color: var(--accent-color);
   border: 0;
   margin: 0;
   margin-bottom: 40px;
@@ -154,7 +160,7 @@ body {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 24px;
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  font-family: var(--main-condenced-font), var(--main-font);
 }
 
 .hero-text {
@@ -183,7 +189,7 @@ body {
   letter-spacing: 0.5px;
   margin-top: 0;
   margin-bottom: 72px;
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  font-family: var(--main-condenced-font), var(--main-font);
 }
 
 .features-list {
@@ -208,7 +214,7 @@ body {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 12px;
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  font-family: var(--main-condenced-font), var(--main-font);
 }
 
 .feature-info {
@@ -251,7 +257,7 @@ body {
   margin-top: 0;
   margin-bottom: 24px;
   line-height: 48px;
-  font-family: "Roboto Condensed", "Roboto", "Arial", sans-serif;
+  font-family: var(--main-condenced-font), var(--main-font);
 }
 
 .promo-info-wrapper {
@@ -268,7 +274,7 @@ body {
 }
 
 .promo-highlight {
-  color: #ff7500;
+  color: var(--accent-color);
 }
 
 .promo-img {
@@ -320,7 +326,7 @@ body {
 }
 
 .site-footer-socials a:hover {
-  color: #ff7500;
+  color: var(--accent-color);
 }
 
 .site-footer-socials a:active {
@@ -369,7 +375,7 @@ body {
 }
 
 .site-footer-links a:hover {
-  color: #ff7500;
+  color: var(--accent-color);
 }
 
 .site-footer-links a:active {
