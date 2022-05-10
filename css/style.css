@@ -4,13 +4,22 @@
   --main-condenced-font: "Roboto Condensed";
 }
 
-* {
+html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
   font-size: 16px;
   line-height: 1.5;
   font-family: var(--main-font);
