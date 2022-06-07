@@ -149,6 +149,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .hero-content {
@@ -182,6 +183,9 @@ body {
   height: 510px;
   border-radius: 8px;
   box-shadow: 24px 24px 0 0 rgba(255, 117, 0, 0.6);
+  position: absolute;
+  right: 20px;
+  top: -40px;
 }
 
 /* Features */
@@ -255,6 +259,7 @@ body {
   color: #fff;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .promo-content {
@@ -291,6 +296,9 @@ body {
   height: 440px;
   object-fit: cover;
   border-radius: 12px;
+  position: absolute;
+  right: 20px;
+  bottom: 64px;
 }
 
 /* Site-footer */
